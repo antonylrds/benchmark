@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+    <h1 id="milisegundos">Tempo em milisegundos: </h1>
+
+
+    <div>
+        <label for="tamArray">Tamanho da lista</label>
+        <input type="number" id="tamArray" min="2" step="1" max="10000000">
+    </div>
+    <div>
+        <label for="">Selecione a ordem da Lista</label>
+        <select name="" id="selectOrdem">
+            <option value="ordenado">Ordenada</option>
+            <option value="invertido">Invertida</option>
+            <option value="randomico">Randomica</option>
+        </select>
+    </div>
+    <button onclick="novaLista()">Gerar Nova Lista</button>
+    <div>
+        <label for="timeout">Timeout</label>
+        <input type="number" step="1" min="0" id="timeout" value="1000">
+    </div>
+    <div>
+        <label for="selectAlgoritmo">Selecione o Algoritmo</label>
+        <select name="" id="selectAlgoritmo" value="selectionSort">
+            <option value="selectionSort">Selection Sort</option>
+            <option value="bubbleSort">Bubble Sort</option>
+            <option value="mergeSort">Merge Sort</option>
+            <option value="insertionSort">Insertion Sort</option>
+            <option value="quickSort">Quick Sort</option>
+        </select>
+    </div>
+    <button onclick="ordenar()">Ordenar</button>
+
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <!-- <script src="canvasjs/jquery.canvasjs.min.js"></script> -->
+    <script src="canvasjs/canvasjs.min.js"></script>
+    <script src="bundle.js"></script>
+    <!-- <script src="bundle.js"></script> -->
+</body>
+</html>
